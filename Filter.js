@@ -6,7 +6,7 @@ var HashMap = require('hashmap').HashMap;
 var path = require('path');
 
 var Filter = function (filepath) {
-    this.data = fs.readFileSync(path.join(__dirname,'../../'+filepath), {encoding: 'utf-8'});
+    this.data = fs.readFileSync(path.join(__dirname,'../../'+filepath), {encoding: 'utf-8'}).split(/\r?\n/);
     // this.data = fs.readFileSync('sensitive.txt', {encoding: 'utf-8'}).split(/\r?\n/);
     this.keywordMap = this.buildMap();
 };

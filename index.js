@@ -7,6 +7,6 @@ var Filter=require('./Filter');
 
 var fm=new Filter('./config/keyword.json');
 
-var result=fm.hasKeyword('你妈逼',true);
+var result=fm.hasKeyword('fuck',true);
 
 console.log(result);
