@@ -7,6 +7,6 @@ var Filter=require('./Filter');
 
 var fm=new Filter('./config/keyword.json');
 
-var result=fm.isKeyword('china-a');
+var result=fm.hasKeyword('你妈逼',true);
 
 console.log(result);

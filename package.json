@@ -4,6 +4,7 @@
   "description": "words-filter for nodejs",
   "main": "Filter.js",
   "dependencies": {
+    "fs": "0.0.1-security",
     "hashmap": "^2.0.6",
     "path": "^0.12.7"
   },

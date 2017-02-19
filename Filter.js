@@ -1,13 +1,13 @@
 /**
  * Created by xiaochuanzhi on 2017/2/19.
  */
-
+var fs = require('fs');
 var HashMap = require('hashmap').HashMap;
 var path = require('path');
 
 var Filter = function (filepath) {
-    this.data = require(path.join(__dirname,'../../'+filepath));
-    // this.data = require(filepath);
+    this.data = fs.readFileSync(path.join(__dirname,'../../'+filepath), {encoding: 'utf-8'});
+    // this.data = fs.readFileSync('sensitive.txt', {encoding: 'utf-8'}).split(/\r?\n/);
     this.keywordMap = this.buildMap();
 };
 Filter.prototype.endTag='\0';
