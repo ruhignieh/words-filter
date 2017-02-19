@@ -1,0 +1,29 @@
+{
+  "name": "words-filter",
+  "version": "1.0.0",
+  "description": "words-filter for nodejs",
+  "main": "Filter.js",
+  "dependencies": {
+    "hashmap": "^2.0.6",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siuu/words-filter.git"
+  },
+  "keywords": [
+    "node",
+    "word",
+    "filter"
+  ],
+  "author": "siu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siuu/words-filter/issues"
+  },
+  "homepage": "https://github.com/siuu/words-filter#readme"
+}
