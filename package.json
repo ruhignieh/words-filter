@@ -1,6 +1,6 @@
 {
   "name": "words-filter",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "words-filter for nodejs",
   "main": "Filter.js",
   "dependencies": {
