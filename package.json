@@ -1,14 +1,18 @@
 {
   "name": "words-filter",
-  "version": "2.1.1",
-  "description": "words-filter for nodejs",
+  "version": "3.0.1",
+  "description": "sensitive word filter implemented with DFA algorithm",
   "main": "Filter.js",
   "dependencies": {
     "fs": "0.0.1-security",
-    "hashmap": "^2.0.6",
+    "hashmap": "^2.0.29",
     "path": "^0.12.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^3.5.3",
+    "@types/node": "^12.6.8",
+    "@types/hashmap": "^2.0.29"
+  },
   "scripts": {
     "test": "node index.js"
   },
