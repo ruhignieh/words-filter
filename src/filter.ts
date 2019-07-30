@@ -15,7 +15,6 @@ export class Filter {
     constructor(pathLike: fs.PathLike = '') {
         if (!pathLike) {
             pathLike = path.join(__dirname, '../resource/sensitive.txt');
-            console.log(pathLike);
         }
 
         this._keywords = fs.readFileSync(pathLike, {encoding: 'utf-8'}).toLowerCase().split(/\r?\n/);
