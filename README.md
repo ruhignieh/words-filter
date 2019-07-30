@@ -12,18 +12,6 @@ words-filter for nodejs
     
 
 ## Example
-
-把敏感词保存在txt文件，每个敏感词一行。 e.g. sensitive.txt
-
-项目目录
-
-    your-project
-    | ____ node_modules
-    | ____ config
-    |      |____sensitive.txt
-    | ____ package.json
-    |
-    *.*
     
 ***
     
