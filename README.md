@@ -27,11 +27,11 @@ words-filter for nodejs
     
 ***
     
-    var Filter=require('words-filter');
+    const Filter=require('words-filter').Filter;
     
-    var wf=new Filter();
+    const filter=new Filter();
     
-    fm.hasKeyword('fuck-u',true);//return true
+    filter.hasKeyword('fuck u',true);//return true
     
-    fm.isKeyword('fuck-u',true);//return false
+    filter.isKeyword('fuck u',true);//return false
     

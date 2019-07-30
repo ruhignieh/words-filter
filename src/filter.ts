@@ -6,7 +6,7 @@ import * as path from "path";
 import HashMap from "hashmap";
 
 
-export default class Filter {
+export class Filter {
     _keywordMap: HashMap<string, any>;
     _keywords: string[];
     _endTag: string = '\0';
@@ -70,7 +70,7 @@ export default class Filter {
             }
         }
         return false;
-    };
+    }
 
     isKeyword(text: string, rmSymbol: boolean = true) {
         if (rmSymbol) {
@@ -79,6 +79,6 @@ export default class Filter {
         text = text.toLowerCase();
         return this._keywords.indexOf(text) >= 0;
 
-    };
+    }
 
 }
