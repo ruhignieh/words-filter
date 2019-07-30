@@ -1,6 +1,6 @@
 {
   "name": "words-filter",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "sensitive word filter implemented with DFA algorithm",
   "main": "./dist/filter.js",
   "types": "./dist/filter.d.ts",
