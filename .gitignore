@@ -5,6 +5,8 @@
 # IntelliJ project files
 .idea
 *.iml
+dist
+package-lock.json
 out
 gen
 /config/keyword.json

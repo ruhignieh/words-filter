@@ -2,19 +2,23 @@
   "name": "words-filter",
   "version": "3.0.1",
   "description": "sensitive word filter implemented with DFA algorithm",
-  "main": "Filter.js",
+  "main": "./dist/filter.js",
+  "types": "./dist/filter.d.ts",
   "dependencies": {
     "fs": "0.0.1-security",
     "hashmap": "^2.0.29",
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "typescript": "^3.5.3",
+    "@types/hashmap": "^2.0.29",
     "@types/node": "^12.6.8",
-    "@types/hashmap": "^2.0.29"
+    "tslint": "^5.18.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.5.3"
   },
   "scripts": {
-    "test": "node index.js"
+    "prepublish": "npm run build",
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",

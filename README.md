@@ -29,11 +29,9 @@ words-filter for nodejs
     
     var Filter=require('words-filter');
     
-    var wf=new Filter('config/sensitive.txt');
-    
+    var wf=new Filter();
     
     fm.hasKeyword('fuck-u',true);//return true
     
     fm.isKeyword('fuck-u',true);//return false
-    
     
